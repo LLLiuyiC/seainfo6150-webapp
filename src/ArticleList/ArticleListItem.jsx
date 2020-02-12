@@ -1,16 +1,16 @@
 import React from 'react';
-
+import SlugButton from './SlugButton.jsx'
+import style from './ArticleListItem.module.css'
 
 const ArticleListItem = (props) => {
   return (
   <div>
-    <section>
-        <h3>{props.article.title}</h3>
+    <section className={style.container}>
+        <h3 className={style.title}> {props.article.title}</h3>
         <p>{props.article.shortText}</p>
-        <time dateTime={props.article.pubYear}>{props.article.pubDate}</time>
-        <button onClick={() => alert(`${props.article.slug}`)}>
-       show article  slug
-      </button>
+        <time className={style.time} dateTime={props.article.pubYear}>{props.article.pubDate}</time>
+      
+      <SlugButton slug={props.article.slug} buttonText={props.article.author}></SlugButton>
 
     </section>
 

@@ -1,0 +1,15 @@
+.container{
+    background: white;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    
+}
+.title{
+    color: red;
+   
+}
+.time{
+    font-weight: bolder;
+}
+
