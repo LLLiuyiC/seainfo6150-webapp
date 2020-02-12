@@ -6,7 +6,7 @@ const ArticleListItem = (props) => {
   return (
   <div>
     <section className={style.container}>
-        <h3 className={style.title}> {props.article.title}</h3>
+        <h3 className={style.title} > {props.article.title}</h3>
         <p>{props.article.shortText}</p>
         <time className={style.time} dateTime={props.article.pubYear}>{props.article.pubDate}</time>
       
