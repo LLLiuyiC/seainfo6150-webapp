@@ -6,5 +6,6 @@
     border: 10px solid;
     border-color: rgb(225,0,0);
     box-shadow: 0px 10px 10px grey;
+    position: relative;
    
 }

@@ -1,7 +1,11 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    align-content: center;
     background-image:linear-gradient(to right, rgb(225,0,0),white 10%);
     border: 1px solid #c00;
-    margin-bottom: 20px;
+    margin: 20px 20px 20px 20px;
     padding: 10px;
     position: relative;
     border-radius: 15px;
@@ -11,7 +15,6 @@
 .title {
     color: #c00;
     font-size: 2rem;
-    margin: .5rem 0;
 }
 
 .pubDate {
@@ -25,10 +28,15 @@
 }
 .rest{
     display: inline-block;
-    margin-right: 0;
-    width: 75%;
+    align-self: center;
+    margin-left: 13px;
+
+    width: 100%;
 }
 SlugButton{
-    margin-bottom: 0;
-    float: right;
+    margin-left: 0;
+    float: center;
+    align-content: stretch;
+    position: absolute;
+    bottom:10px;
 }
